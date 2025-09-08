@@ -1,9 +1,13 @@
 *EKS DevOps Project*
 
 1 . Made a small flask app .
+
 2 . Made a requirements file .
+
 3 . Wrote Dockerfile 
-4 . Created an image of the Flask App . 
+
+4 . Created an image of the Flask App .
+ 
 5 . Built and ran the container on localhost:5000 .
 
 
@@ -12,7 +16,9 @@
 
 1 . The container will be uploaded on EKS(AWS) .
 2 . Multiple tools will be used to setup the app 
-    Eg : 1. Jenkins (CI/CD)
+    Eg : 
+        
+        1. Jenkins (CI/CD)
             Purpose: Automate building, testing, and deploying your Docker image.
             Why: You don’t want to run docker build & docker run manually every time you push code.
             Example: Push to GitHub → Jenkins auto-builds image → pushes it to AWS registry → deploys to Kubernetes.
