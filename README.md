@@ -52,3 +52,55 @@
             Purpose: Code quality & static analysis.
             Why: Catches bugs, bad practices, and security flaws early.
             Example: Jenkins runs SonarQube scan → rejects deployment if issues found.
+
+
+
+# Flask App
+
+A simple Flask web application Dockerized for deployment to AWS ECR and Kubernetes.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Docker](#docker)
+- [AWS ECR](#aws-ecr)
+- [Kubernetes Deployment](#kubernetes-deployment)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Overview
+
+This Flask app is a minimal example project that demonstrates:
+
+- Building and running a Flask app locally
+- Dockerizing the application
+- Pushing the Docker image to AWS Elastic Container Registry (ECR)
+- Deploying the app to Kubernetes clusters (Minikube/EKS)
+
+---
+
+## Features
+
+- Simple REST endpoint(s)
+- Containerized for cloud deployment
+- Easily scalable using Kubernetes
+
+---
+
+## Prerequisites
+
+- Python 3.9+  
+- Docker  
+- AWS CLI configured with proper permissions  
+- kubectl (for Kubernetes)  
+- Minikube or access to EKS (optional for cloud deployment)  
+
+---
