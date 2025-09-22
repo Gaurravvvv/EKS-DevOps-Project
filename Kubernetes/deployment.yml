@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-deployment
+  name: flask-app
 spec:
   replicas: 1
   selector:
@@ -13,14 +13,9 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-container
-        image: 856191760297.dkr.ecr.ap-south-1.amazonaws.com/flask-devops-app:latest
+      - name: flask-app-container
+        image: 856191760297.dkr.ecr.ap-south-1.amazonaws.com/flask-app:1.0
         ports:
         - containerPort: 5000
-        resources:
-          requests:
-            memory: "32Mi"
-            cpu: "25m"
-          limits:
-            memory: "64Mi"
-            cpu: "50m"
+      imagePullSecrets:
+      - name: ecr-secret
